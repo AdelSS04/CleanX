@@ -44,7 +44,7 @@ namespace ToDoApp.Server.REST.Controllers
 
             if (!result.IsSuccessful)
             {
-                Json(result.ErrorMessage);
+                return Json(result.ErrorMessage);
             }
 
             return Ok();
